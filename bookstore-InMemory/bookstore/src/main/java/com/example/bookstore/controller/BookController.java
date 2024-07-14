@@ -2,6 +2,7 @@ package com.example.bookstore.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,11 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.bookstore.model.Book;
 import com.example.bookstore.service.BookService;
 
-@RestController
+@RestController // Marks this class as a Spring REST controller (IoC)
 @RequestMapping("/api/books")
 public class BookController {
 
-    private final BookService bookService;
+    @Autowired
+    private final BookService bookService;// This is field injection using @Autowired
 
     public BookController(BookService bookService) {
         this.bookService = bookService;

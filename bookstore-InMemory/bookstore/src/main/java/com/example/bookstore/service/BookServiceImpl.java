@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.bookstore.model.Book;
 
-@Service
+@Service // Marks this class as a Spring bean (IoC)
 public class BookServiceImpl implements BookService {
 
     private final Map<Long, Book> bookMap = new HashMap<>();
