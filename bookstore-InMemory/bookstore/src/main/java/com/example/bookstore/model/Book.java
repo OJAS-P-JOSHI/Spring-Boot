@@ -1,17 +1,16 @@
 package com.example.bookstore.model;
 
 public class Book {
-    private Integer id;
+    private Long id;
     private String title;
     private String author;
     private String isbn;
     private Double price;
 
-    // Constructors
-    public Book() {
-    }
+    // Constructors, getters, and setters
+    public Book() {}
 
-    public Book(Integer id, String title, String author, String isbn, Double price) {
+    public Book(Long id, String title, String author, String isbn, Double price) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -19,12 +18,11 @@ public class Book {
         this.price = price;
     }
 
-    // Getters and setters
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
