@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-top: 20px;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 220px;
+    text-align: center;
+}
+
+.book h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #004d40;
+}
+
+.book p {
+    margin: 5px 0;
+    color: #00796b;
+}
