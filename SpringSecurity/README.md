@@ -1,0 +1,1 @@
+[SS1 PDF.pdf](https://SS1 PDF.pdf)
